@@ -1,0 +1,11 @@
+@function img($url){
+    @return url("./assets/img/ + #{$url}");
+}
+
+@function em($child, $parent:16px){
+    @return $child / $parent * 1em;
+}
+
+@function rem($child, $parent:16px){
+    @return $child / $parent * 1rem;
+}

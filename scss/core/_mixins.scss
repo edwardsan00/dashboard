@@ -1,0 +1,25 @@
+$breakpoints: (
+    small: 360px,
+    mediun: 766px,
+    large: 1024px,
+    x-large: 1400px
+);
+$colors: (
+    gris-claro: #DCD9CF,
+    naranja: #FF6600,
+    azul: #003366,
+    gris-blanco:     #F0f0f0
+);
+
+@mixin media($medida){
+    @if map-has-key($breakpoints, $medida){
+        @media screen and (min-width: map-get($breakpoints, $medida)){
+            @content;
+        }
+    } @else  {
+        @media screen and (min-width: $medida){
+            @content;
+        }
+    }
+}
+

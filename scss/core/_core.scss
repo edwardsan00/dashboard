@@ -1,0 +1,22 @@
+
+$fz: 16px;
+$h1: em(32px);
+$h2: em(24px);
+$h3: em(20px);
+$lh: 1.5;
+$small: .8em;
+
+$thin: 'LatoWebThin';
+$normal:'LatoWebMedium';
+$bold:'LatoWebBold';
+$light:'LatoWebLight';
+
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: $normal;
+}

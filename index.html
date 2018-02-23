@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/latofonts.css">
+    <title>Dashbord</title>
+</head>
+<body>
+    <header class="header box-shadow-bottom">
+        <section class="header__left">
+            <div class="board">
+                <span id="showBoard" class="board__icon icon-menu"></span>
+                <p class="board__text">Boards</p>
+                <sidebar id="sidebarBoard" class="board__sidebar-board box-shadow-right">
+                    <div class="sidebar-board__close">
+                        <span id="closeBoard" class="icon-cerrar"></span>
+                    </div>
+                    <div class="sidebar-board__header">
+                        <div class="cont-color sidebar-board__color box-shadow-complete">
+                            <span class="icon-pin white"></span>
+                        </div>
+                        <div class="sidebar-board__cont-title">
+                            <h3 class="sidebar-board__title">Planner Board</h3>
+                            <p class="sidebar-board__text">Netguru</p>
+                        </div>
+                    </div>
+                    <section class="filter sidebar-board__filter">
+                        <h3 class="filter__title">Filter by Board</h3>
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <div class="cont-color cont-color--gris-claro"></div>
+                                <a class="filter__link">Planner Board</a>
+                            </li>
+                            <li class="filter__item">
+                                <div class="cont-color cont-color--naranja"><span class="icon-aceptar"></span></div>
+                                <a class="filter__link">Summary Board</a>
+                            </li>
+                            <li class="filter__item">
+                                <div class="cont-color cont-color--gris-blanco"></div>
+                                <a class="filter__link">Project Board</a>
+                            </li>
+                            <li class="filter__item">
+                                <div class="cont-color cont-color--azul"><span class="icon-aceptar"></span></div>
+                                <a class="filter__link">Internal Board</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                   <section class="filter board__filter">
+                        <h3 class="filter__title">Filter by Name</h3>
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <div class="cont-color"><img src="./assets/img/girl.jpg" alt="I"></div>
+                                <a class="filter__link">Anna Klawikowska</a>
+                            </li>
+                            <li class="filter__item">
+                                <div class="cont-color"><span><p>S</p></span></div>
+                                <a class="filter__link">Siergiej Soskowiec</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </sidebar>
+            </div>
+            <div class="search">
+                <label name="buscar" class="search__icon icon-buscar"></label>
+                <input type="text" name="buscar" class="search__input" placeholder="Search">
+            </div>
+        </section>
+        <div class="header__right">
+            <div class="profile">
+                <img class="profile__img"src="./assets/img/girl.jpg" alt="Girl">
+                <p class="profile__welcome">Hello, Anna!</p>
+                <span class="profile__notification icon-usuario"></span>            
+            </div>
+            <div class="menu">
+                <span class="menu__icon icon-menu"></span>
+            </div>
+        </div>
+    </header>
+
+    <p class="hola">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ducimus ipsum rerum ut rem voluptate deleniti ab porro quia, vero necessitatibus incidunt possimus doloribus odio assumenda labore atque quibusdam eos.</p>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
