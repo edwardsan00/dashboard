@@ -12,8 +12,11 @@
         height: auto;
         border-radius: 5px;
         background-color: lighten(blue, 30);
-        @include media(mediun){
-            width: 5%;
+        @include media(small-mediun){
+            width: 7%;
+        }
+        @media screen and (min-width: 765px) and (max-width:1050px){
+           width: 10%;
         }
     }
     &__name{
@@ -22,9 +25,15 @@
         font-size: .8em;
         margin-left: -20px;
         margin: 0;
+        @include media(small-mediun){
+            margin-left: -40px;
+        }
         @include media(mediun){
             font-size: .6em;
             margin-left: -30px;
+        }
+        @media screen and (min-width: 765px) and (max-width:1050px){
+           margin-left: -10px;
         }
     }
     &__ago,&__fech{
@@ -60,6 +69,9 @@
                 left: 21%;
                 background-color: lighten(red, 30);
             }
+        }
+        @media screen and (min-width: 765px) and (max-width:1050px){
+           // display: none;
         }
         @include media(mediun){
             width: 30%;

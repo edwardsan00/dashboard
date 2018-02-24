@@ -1,0 +1,85 @@
+.task-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+.task{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: .3em;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba($grisClaro, .5);
+    margin-bottom: 1em;
+    @include media(small-mediun){
+        width: 50%;
+        border-bottom: none;
+    }
+    @media screen and (min-width: 765px) and (max-width: 1050px){
+         width: 100%;
+        border-bottom: solid 1px rgba($grisClaro, .5);
+    }
+     /*   &:nth-child(even){
+        background-color: red;
+        margin-left: .5em;
+    }*/
+    &__description{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__check{
+        display:  block;
+        height: 15px;
+        width: 15px;
+        border: solid 1px rgba($grisClaro, .5);
+        background-color: white;
+        margin-right: .5em;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        margin: 0;
+        font-family: $bold;
+        color: $negro;
+        font-size: .8em;
+    }
+    &__subtitle{
+        margin: 0;
+        font-weight: 400;
+        font-size: .7em;
+        color: $grisOscuro;
+        margin-top: .2em;
+    }
+    &__notify{
+        padding: .3rem .4rem;
+        border-radius: 10px;
+        align-self: flex-start;
+        display: flex;
+        @include media(small-mediun){
+           margin-right: 2em;
+        }
+        &--blue{
+            background-color: lighten(blue, 40);
+            color: lighten(blue, 30);
+        }
+        &--red{
+            background-color: lighten(red, 40);
+            color: lighten(red, 30);
+        }
+        &--none{
+           background-color: transparent;
+           color: transparent;
+        }
+    }
+    &__day{
+        font-size: .6em;
+        text-transform: lowercase;
+    }
+}
