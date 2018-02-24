@@ -5,8 +5,7 @@
 @import "core/mixins";
 @import "core/colors";
 
-@import "module/utility";
-@import "module/stadistic";
+
 
 @import "components/header";
 @import "components/sumary-header";
@@ -14,3 +13,6 @@
 @import "components/widget";
 @import "atoms/atoms";
 
+@import "module/utility";
+@import "module/stadistic";
+@import "module/useractivity";

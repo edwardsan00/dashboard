@@ -1,0 +1,71 @@
+.activity{
+    width: 90%;
+    margin-left: 5%;
+    &__user{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .3em 0;
+    }
+    &__img{
+        width: 10%;
+        height: auto;
+        border-radius: 5px;
+        background-color: lighten(blue, 30);
+        @include media(mediun){
+            width: 5%;
+        }
+    }
+    &__name{
+        color: $negro;
+        font-family: $bold;
+        font-size: .8em;
+        margin-left: -20px;
+        margin: 0;
+        @include media(mediun){
+            font-size: .6em;
+            margin-left: -30px;
+        }
+    }
+    &__ago,&__fech{
+        display: block;
+        font-size: .6em;
+        color: $grisOscuro;
+    }
+    &__ago{
+
+    }
+    &__progbar{
+        display: none;
+        @include media(small-mediun){
+            display: block;
+            margin-top: .5em;
+            width: 20%;
+            height: .2em;
+            background-color: $grisClaro;
+            border-radius: 20px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 21%;
+                height: 100%;
+                background-color: lighten(blue, 30);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 21%;
+                height: 100%;
+                left: 21%;
+                background-color: lighten(red, 30);
+            }
+        }
+        @include media(mediun){
+            width: 30%;
+        }
+    }
+    &__fech{
+        display: block;
+    }
+}
