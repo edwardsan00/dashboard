@@ -1,21 +1,4 @@
-@import "core/normalize";
-@import "core/icon-fonts";
-@import "core/functions";
-@import "core/core";
-@import "core/mixins";
-@import "core/colors";
-
-
-
-@import "components/header";
-@import "components/sumary-header";
-@import "components/main";
-@import "components/widget";
+@import "core/core-import";
 @import "atoms/atoms";
-
-@import "module/utility";
-@import "module/stadistic";
-@import "module/useractivity";
-@import "module/task";
-@import "module/taskcomplete";
-@import "module/recentactivity";
+@import "components/components";
+@import "module/module";

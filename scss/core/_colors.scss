@@ -2,3 +2,9 @@ $gris: #c1c1c1;
 $grisClaro: lighten($gris, 10);
 $grisOscuro: darken($gris, 20);
 $negro: #404040;
+$colors: (
+    gris-claro: #DCD9CF,
+    naranja: #FF6600,
+    azul: #003366,
+    gris-blanco:     #F0f0f0
+);
