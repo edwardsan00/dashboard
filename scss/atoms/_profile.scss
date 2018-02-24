@@ -1,0 +1,60 @@
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: .5em;
+    position: relative;
+    @media screen and (max-width: 760px){ 
+        &::after{
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 20px;
+            background-color: darken(dodgerblue, 15);
+            top: 13px;
+            right: 4px;
+        }
+    }
+    &__img{
+        width: 22%;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        @include media(mediun){
+            width: 12%;
+        }
+
+    }
+    &__welcome{
+        display: none;
+        font-size: .7em;
+        padding: 0 1em;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: $gris;
+        @include media(mediun){
+            display: block;
+        }
+    }
+    &__notification{
+        display: none;
+        color: $grisClaro;
+        padding-top: .2em;
+        margin: 0 .5em;
+        @include media(mediun){
+            display: block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border-radius: 20px;
+                background-color: darken(dodgerblue, 15);
+                top: 0px;
+                right: 0px;
+            }
+        }
+    }
+}

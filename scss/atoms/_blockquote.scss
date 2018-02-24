@@ -39,5 +39,9 @@
         font-size: .8rem;
     @include media(mediun){
         font-size: 1em;
+        padding-left: 1em;
+        .cont-color{
+            margin-left: 0;
+        }
     }
 }

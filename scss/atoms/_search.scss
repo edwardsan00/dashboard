@@ -1,0 +1,20 @@
+.search{
+    display: flex;
+    align-items: center;
+    &__icon{
+        margin-left: .5em;
+        margin-top: .2em;
+        color: $grisClaro;
+        cursor: pointer;
+    }
+    &__input{
+       width: 100%;
+       border: none;
+       font-size: .7em;
+       padding-left: .5em;
+       letter-spacing: .05em;
+       font-style: italic;
+       display: none;
+       
+    }
+}

@@ -1,0 +1,11 @@
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    &__icon{
+        margin-top: .2em;
+        color: $grisClaro;
+        cursor: pointer;
+    }
+}
