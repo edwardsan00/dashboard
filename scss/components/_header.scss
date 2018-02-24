@@ -1,13 +1,19 @@
 .header{
     display: flex;
     flex-direction: row;
+    @include media(mediun){
+        padding: .2em;
+        font-size: 1em;
+    }
     &__left{
         width: 70%;
         display: flex;
+        padding-left: .5em;
     }
     &__right{
         width: 30%;
         display: flex;
         justify-content: flex-end;
+        padding-right: .5em;
     }
 }

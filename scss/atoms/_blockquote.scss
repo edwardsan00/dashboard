@@ -1,0 +1,43 @@
+.blockquote{ 
+    &__header{
+        display: flex;
+        align-items: center;    
+        padding-left: 1.5em;    
+    }
+    &__color-cont{
+        width: em(40px);
+        height: em(40px);
+        span {
+            display: block;
+            color: white;
+            padding-top: .2em;
+        }
+    }
+    &__cont-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em 0;
+    }
+    &__title{
+        margin: 0;
+        font-family: $bold;
+        color: $negro;
+        font-size: 1em;
+        letter-spacing: .02em;
+    }
+    &__text{
+        margin: 0;
+        font-family: $normal;
+        font-size: .8em;
+        color: $grisClaro;
+    }
+}
+
+.blockquote-sumary{
+        padding-left: .5em;
+        font-size: .8rem;
+    @include media(mediun){
+        font-size: 1em;
+    }
+}

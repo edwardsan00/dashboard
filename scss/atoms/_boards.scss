@@ -8,6 +8,7 @@
         margin-top: .2em;
         color: $grisClaro;
         cursor: pointer;
+
     }
     &__text{
         margin-left: .8em;
@@ -39,74 +40,10 @@
         padding: .5em;
         cursor: pointer;
     }
-    &__header{
-        display: flex;
-        align-items: center;    
-        padding-left: 1.5em;    
-    }
-    &__color-cont{
-        width: em(40px);
-        height: em(40px);
-        span {
-            display: block;
-            color: white;
-            padding-top: .2em;
-        }
-    }
-    &__cont-title{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1em 0;
-    }
-    &__title{
-        margin: 0;
-        font-family: $bold;
-        color: $negro;
-        font-size: 1em;
-        letter-spacing: .02em;
-    }
-    &__text{
-        margin: 0;
-        font-family: $normal;
-        font-size: .8em;
-        color: $grisClaro;
-    }
     &__filter{
 
     }
 }
-
-.filter{
-    margin-left: 1.5em;
-    &__title{
-        text-transform: uppercase;
-        font-size: .8em;
-        font-family: $light;
-    }
-    &__list{
-        width: 100%;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 0;
-    }
-    &__item{
-        width: 100%;
-        display: flex;
-        margin-bottom: 1em;
-        cursor: pointer;
-    }
-    &__link{
-        align-self: center;
-        font-size: .8em;
-        &:hover{
-            color: $grisOscuro;
-        }
-    }
-}
-
-
 
 
 
@@ -179,28 +116,58 @@
     justify-content: flex-end;
     padding-right: .5em;
     position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        border-radius: 20px;
-        background-color: darken(dodgerblue, 15);
-        top: 13px;
-        right: 4px;
+    @media screen and (max-width: 760px){ 
+        &::after{
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 20px;
+            background-color: darken(dodgerblue, 15);
+            top: 13px;
+            right: 4px;
+        }
     }
     &__img{
         width: 22%;
         border-radius: 5px;
         position: relative;
         cursor: pointer;
+        @include media(mediun){
+            width: 12%;
+        }
 
     }
     &__welcome{
         display: none;
+        font-size: .7em;
+        padding: 0 1em;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: $gris;
+        @include media(mediun){
+            display: block;
+        }
     }
     &__notification{
         display: none;
+        color: $grisClaro;
+        padding-top: .2em;
+        margin: 0 .5em;
+        @include media(mediun){
+            display: block;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border-radius: 20px;
+                background-color: darken(dodgerblue, 15);
+                top: 0px;
+                right: 0px;
+            }
+        }
     }
 }
 

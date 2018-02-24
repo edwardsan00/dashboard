@@ -33,3 +33,30 @@
         background-color: #{$valor};
     }
 }
+
+.btn{
+    display: inline-block;
+    padding: .5rem .6rem;
+    background-color: tomato;
+    font-size: .7em;
+    min-width: em(120px);
+    font-family: $bold;
+    color: $grisOscuro;
+    text-align: center;
+    cursor: pointer;
+    @include media(mediun){
+        font-size: .8em;
+    }
+
+}
+.btn-white{
+    background-color: white;
+    box-shadow: 0 0px 1px 10px inset rgba(0,0,0, 0.1);
+    border: solid 1px white;
+}
+.btn-gray{
+
+    background-color: #f0f0f0;
+    border: solid 1px $grisClaro;
+     //box-shadow: 0 0px 0px 1px rgba(0,0,0, 0.1);
+}
