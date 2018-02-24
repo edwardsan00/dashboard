@@ -9,7 +9,7 @@
 .widget{
     width: 90%;
     margin: 0 auto;
-    min-height: em(300px);
+    min-height: em(280px);
     background-color: white;
     box-shadow: 0 1px 1px 1px rgba(0,0,0, 0.1);
     margin-bottom: 1.5em;
@@ -62,15 +62,15 @@
 
     }
     & > *{
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
     &__menu{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
         padding-top: .5em;
     }
     &__title{
