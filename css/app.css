@@ -1384,7 +1384,6 @@ main {
 .task-complete {
   width: 90%;
   margin-left: 5%;
-  background-color: tomato;
   padding-bottom: .5em;
   height: 220px;
   overflow: hidden;
@@ -1392,12 +1391,12 @@ main {
 
 .task-complete img {
   max-width: 100%;
+  height: auto;
 }
 
 .recent-activity {
   width: 90%;
   margin-right: 5%;
-  background-color: tomato;
   padding-bottom: .5em;
   height: 220px;
   overflow: hidden;
