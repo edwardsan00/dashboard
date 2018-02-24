@@ -730,7 +730,7 @@ main {
 }
 
 .widget > * {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1379,4 +1379,30 @@ main {
 .task__day {
   font-size: .6em;
   text-transform: lowercase;
+}
+
+.task-complete {
+  width: 90%;
+  margin-left: 5%;
+  background-color: tomato;
+  padding-bottom: .5em;
+  height: 220px;
+  overflow: hidden;
+}
+
+.task-complete img {
+  max-width: 100%;
+}
+
+.recent-activity {
+  width: 90%;
+  margin-right: 5%;
+  background-color: tomato;
+  padding-bottom: .5em;
+  height: 220px;
+  overflow: hidden;
+}
+
+.recent-activity img {
+  max-width: 100%;
 }
